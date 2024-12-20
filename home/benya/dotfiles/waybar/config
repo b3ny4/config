@@ -24,7 +24,7 @@
         "memory",
         "temperature",
         //"backlight",
-        "keyboard-state",
+        //"keyboard-state",
         "hyprland/language",
         "battery",
         "battery#bat2",

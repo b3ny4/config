@@ -54,12 +54,24 @@
             inputs.disko.nixosModules.disko
           ];
         };
+        ideapad = nixpkgs.lib.nixosSystem {
+          specialArgs = { inherit inputs outputs; };
+          modules = [
+            ./hosts/ideapad
+            inputs.disko.nixosModules.disko
+          ];
+        };
       };
       homeConfigurations = {
         "benya@sbook" = home-manager.lib.homeManagerConfiguration {
           pkgs = nixpkgs.legacyPackages."x86_64-linux";
           extraSpecialArgs = { inherit inputs outputs; };
           modules = [ ./home/benya/sbook.nix ];
+        };
+        "benya@ideapad" = home-manager.lib.homeManagerConfiguration {
+          pkgs = nixpkgs.legacyPackages."x86_64-linux";
+          extraSpecialArgs = { inherit inputs outputs; };
+          modules = [ ./home/benya/ideapad.nix ];
         };
       };
     };

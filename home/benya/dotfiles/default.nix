@@ -7,6 +7,7 @@
 
   imports = [
     ./bat.nix
+	./git.nix
     ./kitty.nix
     ./nvim.nix
     ./rofi.nix

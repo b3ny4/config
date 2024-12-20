@@ -14,7 +14,8 @@ in {
       enable = true;
       settings = {
 
-        monitor = "eDP-1,2560x1440,0x0,1.6";
+#        monitor = "eDP-1,2560x1440,0x0,1.6";
+        monitor = "eDP-1,2560x1440,0x0,1";
 
         exec-once = [
           "waybar"
