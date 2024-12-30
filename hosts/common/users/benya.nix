@@ -9,6 +9,7 @@
     extraGroups = [
       "networkmanager"
       "wheel"
+      "docker"
     ];
     packages = [inputs.home-manager.packages.${pkgs.system}.default];
   };

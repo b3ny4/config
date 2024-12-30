@@ -23,7 +23,7 @@
   virtualisation.docker.enable = true;
 
   # Set your time zone.
-  # time.timeZone = "Europe/Amsterdam";
+  time.timeZone = "Europe/Berlin";
 
   # Configure network proxy if necessary
   # networking.proxy.default = "http://user:password@proxy:port/";
@@ -31,11 +31,11 @@
 
   # Select internationalisation properties.
   # i18n.defaultLocale = "en_US.UTF-8";
-  # console = {
+  console = {
   #   font = "Lat2-Terminus16";
-  #   keyMap = "us";
+    keyMap = "dvorak";
   #   useXkbConfig = true; # use xkb.options in tty.
-  # };
+  };
 
   # Enable the X11 windowing system.
   # services.xserver.enable = true;
@@ -99,8 +99,11 @@
   environment.systemPackages = with pkgs; [
     alsa-utils
     bitwarden-cli
+    burpsuite
+    dnsutils
     git
     google-chrome
+    lazydocker
     man-pages
     neovim
     networkmanagerapplet
@@ -108,6 +111,7 @@
     python314
     silver-searcher
     tree
+    unzip
     vim
   ];
 
