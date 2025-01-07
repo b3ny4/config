@@ -20,7 +20,14 @@
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
-  virtualisation.docker.enable = true;
+  virtualisation = {
+    containers.enable = true;
+    docker.enable = true;
+    podman = {
+      enable = true;
+      defaultNetwork.settings.dns_enabled = true;
+    };
+  };
 
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
@@ -38,7 +45,9 @@
   };
 
   # Enable the X11 windowing system.
-  # services.xserver.enable = true;
+  #services.xserver.enable = true;
+
+  services.xserver.videoDrivers = [ "displaylink" "modesetting" ];
 
 
   
@@ -98,18 +107,29 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     alsa-utils
-    bitwarden-cli
     burpsuite
+    dive
+    docker-compose
     dnsutils
     git
+    gnumake
     google-chrome
+    kdePackages.gwenview
+    kdePackages.dolphin
+    kdePackages.kio-extras
+    kdePackages.kio-fuse
+    kdePackages.qtsvg
+    kdePackages.qtwayland
     lazydocker
     man-pages
     neovim
     networkmanagerapplet
     pavucontrol
+    podman-compose
+    podman-tui
     python314
     silver-searcher
+    tig
     tree
     unzip
     vim
