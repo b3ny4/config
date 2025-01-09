@@ -121,6 +121,7 @@
     kdePackages.qtsvg
     kdePackages.qtwayland
     lazydocker
+    libreoffice-qt
     man-pages
     neovim
     networkmanagerapplet
@@ -130,6 +131,7 @@
     python314
     silver-searcher
     tig
+    tmux
     tree
     unzip
     vim
