@@ -7,9 +7,10 @@
   users.users.benya = {
     isNormalUser = true;
     extraGroups = [
+      "docker"
       "networkmanager"
       "wheel"
-      "docker"
+      "wireshark"
     ];
     packages = [inputs.home-manager.packages.${pkgs.system}.default];
   };

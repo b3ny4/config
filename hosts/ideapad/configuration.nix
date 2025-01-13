@@ -130,11 +130,13 @@
     podman-tui
     python314
     silver-searcher
+    texlive.combined.scheme-full
     tig
     tmux
     tree
     unzip
     vim
+    wireshark
   ];
 
   environment.sessionVariables = {
