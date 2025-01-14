@@ -136,6 +136,7 @@
     tree
     unzip
     vim
+    vlc
     wireshark
   ];
 
