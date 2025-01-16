@@ -111,6 +111,7 @@
     dive
     docker-compose
     dnsutils
+    gimp
     git
     gnumake
     google-chrome
