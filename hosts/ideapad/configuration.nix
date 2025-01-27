@@ -103,7 +103,7 @@
   
   services.pcscd.enable = true;
 
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
     extraPackages = with pkgs; [
       rocmPackages.clr.icd
