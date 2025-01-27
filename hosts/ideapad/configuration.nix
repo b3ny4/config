@@ -103,11 +103,20 @@
   
   services.pcscd.enable = true;
 
+  hardware.opengl = {
+    enable = true;
+    extraPackages = with pkgs; [
+      rocmPackages.clr.icd
+    ];
+  };
+
+
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     alsa-utils
     burpsuite
+    davinci-resolve
     dive
     docker-compose
     dnsutils
