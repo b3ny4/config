@@ -124,6 +124,7 @@
     git
     gnumake
     google-chrome
+    hoppscotch
     kdePackages.gwenview
     kdePackages.dolphin
     kdePackages.kio-extras
