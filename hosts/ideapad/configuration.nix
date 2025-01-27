@@ -135,6 +135,7 @@
     man-pages
     neovim
     networkmanagerapplet
+    obs-studio
     pavucontrol
     podman-compose
     podman-tui
