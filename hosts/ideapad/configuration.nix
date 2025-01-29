@@ -133,6 +133,7 @@
     kdePackages.qtwayland
     lazydocker
     libreoffice-qt
+    lunar-client
     man-pages
     neovim
     networkmanagerapplet
