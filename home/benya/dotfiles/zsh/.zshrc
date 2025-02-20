@@ -68,6 +68,9 @@ export LESS_TERMCAP_se=$'\e[22;27;49m'
 export LESS_TERMCAP_us=$'\e[3;4;38;5;208m'
 export LESS_TERMCAP_ue=$'\e[24;23;208m'
 
+# fix ssh in weird terminal emulators (e.g. kitty)
+export TERM=xterm-256color
+
 # Aliases
 alias ls='eza --icons'
 alias rebuild='nixos-rebuild switch --flake ${HOME}/config#$(hostname) --use-remote-sudo'

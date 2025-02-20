@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       #./disko-config.nix
       ./hardware-configuration.nix
+      ./vm.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -135,21 +136,28 @@
     libreoffice-qt
     lunar-client
     man-pages
+    multipass
     neovim
     networkmanagerapplet
     obs-studio
+    openvpn
+    p7zip
     pavucontrol
     podman-compose
     podman-tui
     python314
+    qemu
     silver-searcher
+    sql-studio
     texlive.combined.scheme-full
+    thunderbird
     tig
     tmux
     tree
     unzip
     vim
     vlc
+    vscode
     wireshark
   ];
 

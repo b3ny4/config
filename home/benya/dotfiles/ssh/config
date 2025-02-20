@@ -1,0 +1,12 @@
+Host k8s-1
+    HostName 192.168.122.11
+
+Host k8s-2
+    HostName 192.168.122.12
+
+Host k8s-3
+    HostName 192.168.122.13
+
+Host platform-test
+	HostName platform-test.insiderpie.de
+	User benjamin

@@ -12,6 +12,7 @@
     ./kitty.nix
     ./nvim.nix
     ./rofi.nix
+    ./ssh.nix
     ./waybar.nix
     ./zsh.nix
  ];
